@@ -5,8 +5,8 @@ public class LongNumberDigitsCounter {
 
     public static long longCounter(long num) {
 
-        long lenght = 0;
-        lenght = String.valueOf(new BigDecimal(num)).length();
-        return lenght;
+        long length = 0;
+        length = String.valueOf(new BigDecimal(num)).length();
+        return length;
     }
 }

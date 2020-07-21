@@ -10,7 +10,7 @@ public class Main {
 //Calculating Factorial of a number
         CalculateFactorials fac = new CalculateFactorials();
         System.out.println("The Factorial of number 5 is");
-        System.out.println(fac.calcfactorial(5));
+        System.out.println(fac.calcFactorial(5));
 
         System.out.println("-----------------------");
 
