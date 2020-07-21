@@ -4,7 +4,7 @@ public class CalculateFactorials {
         int returnValue = 1;
         for (int i = 1; i <= n; i++) {
             returnValue *= i;
-            System.out.println(i + returnValue);
+
         }
         return returnValue;
     }

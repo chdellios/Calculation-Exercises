@@ -2,17 +2,20 @@ import java.util.ArrayList;
 
 public class IsPrime {
 
-
+    //Checking if a number  is prime
     public static boolean isPrime(int n) {
-        int upto = (int) (Math.sqrt(n) + 1);
-        if (n == 2)
-            return true;
-        if (n % 2 == 0)//
-            return false;
-        for (int j = 1; j < upto; j += 2) {
-            if (n % j == 0)
-                return false;
+        boolean flag = true;
+        //int upto = (int) (Math.sqrt(n) + 1);
+        if (n == 2) {
+            flag = true;
+        } else if (n % 2 == 0) {
+            flag = false;
+        } else {
+            for (int j = 3; j < n / 2; j += 2) {
+                if (n % j == 0)
+                    flag = false;
+            }
         }
-        return true;
+        return flag;
     }
 }
